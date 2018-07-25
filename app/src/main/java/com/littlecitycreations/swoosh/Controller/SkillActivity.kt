@@ -1,7 +1,10 @@
-package com.littlecitycreations.swoosh
+package com.littlecitycreations.swoosh.Controller
 
-import android.support.v7.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import com.littlecitycreations.swoosh.Utilities.EXTRA_LEAGUE
+import com.littlecitycreations.swoosh.R
 
 class SkillActivity : BaseActivity() {
 
@@ -14,5 +17,9 @@ class SkillActivity : BaseActivity() {
         println("OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO $league")
     }
 
+    fun onSkillFinishClicked(view: View) {
+        val finishActivity = Intent(this, FinishActivity::class.java)
+        startActivity(finishActivity)
+    }
 
 }
