@@ -63,5 +63,4 @@ class LeagueActivity : BaseActivity() {
 
     }
 
-
 }
